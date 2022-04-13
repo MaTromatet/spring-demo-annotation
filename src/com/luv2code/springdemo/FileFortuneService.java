@@ -24,19 +24,19 @@ public class FileFortuneService implements FortuneService {
 
 	public FileFortuneService() {
 
-		System.out.println(">> FileFortuneService: inside default constructor");
+		//System.out.println(">> FileFortuneService: inside default constructor");
 		
 	}
 
 	@PostConstruct
 	private void loadTheFortunesFile() {
 		
-		System.out.println(">> FileFortuneService: inside method loadTheFortunesFile");
+		//System.out.println(">> FileFortuneService: inside method loadTheFortunesFile");
 
 		File theFile = new File(fileName);
 		
-		System.out.println("Reading fortunes from file: " + theFile);
-		System.out.println("File exists: " + theFile.exists());
+		//System.out.println("Reading fortunes from file: " + theFile);
+		//System.out.println("File exists: " + theFile.exists());
 		
 		// initialize array list
 		theFortunes = new ArrayList<String>();

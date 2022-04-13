@@ -17,7 +17,7 @@ public class TennisCoach implements Coach {
 	//Field injection 
 	@Autowired
 	//définir quelle implémentation de l'interface va etre utilisée
-	@Qualifier("fileFortuneService")
+	@Qualifier("happyFortuneService")
 	private FortuneService fortuneService; 
 	
 	//-----------------------------------------------------
